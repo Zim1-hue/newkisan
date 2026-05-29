@@ -1,0 +1,37 @@
+{
+  "datasetInfo": {
+    "totalSamples": 2200,
+    "features": 7,
+    "classes": 22,
+    "trainSamples": 1760,
+    "testSamples": 440
+  },
+  "models": {
+    "decisionTree": {
+      "accuracy": 8.409090909090908,
+      "correct": 37,
+      "total": 440,
+      "trainingTimeMs": 48550.231100000005,
+      "predictionTimeMs": 0.699800000002142,
+      "parameters": {
+        "maxDepth": 10,
+        "minNumSamples": 3
+      }
+    },
+    "knn": {
+      "error": "Cannot find package 'ml-knn' imported from d:\\new kisan\\model_comparison_experiment.js"
+    },
+    "randomForest": {
+      "accuracy": 9.090909090909092,
+      "correct": 40,
+      "total": 440,
+      "trainingTimeMs": 0,
+      "predictionTimeMs": 5.736299999996845,
+      "parameters": {
+        "nEstimators": 50,
+        "maxDepth": 10,
+        "maxFeatures": 3
+      }
+    }
+  }
+}
