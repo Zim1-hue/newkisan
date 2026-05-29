@@ -1,0 +1,91 @@
+{
+  "datasetInfo": {
+    "totalSamples": 2200,
+    "features": 7,
+    "classes": 22,
+    "trainSamples": 1760,
+    "testSamples": 440,
+    "classOrder": [
+      "apple",
+      "banana",
+      "blackgram",
+      "chickpea",
+      "coconut",
+      "coffee",
+      "cotton",
+      "grapes",
+      "jute",
+      "kidneybeans",
+      "lentil",
+      "maize",
+      "mango",
+      "mothbeans",
+      "mungbean",
+      "muskmelon",
+      "orange",
+      "papaya",
+      "pigeonpeas",
+      "pomegranate",
+      "rice",
+      "watermelon"
+    ]
+  },
+  "models": {
+    "decisionTree": {
+      "accuracy": 99.31818181818181,
+      "correct": 437,
+      "total": 440,
+      "trainingTimeMs": 3648.6232,
+      "predictionTimeMs": 0.6980999999996129,
+      "parameters": {
+        "maxDepth": 10,
+        "minNumSamples": 3
+      }
+    },
+    "knn": {
+      "accuracy": 97.72727272727273,
+      "correct": 430,
+      "total": 440,
+      "trainingTimeMs": 5.547399999999925,
+      "predictionTimeMs": 206.14869999999974,
+      "parameters": {
+        "k": 5
+      }
+    },
+    "randomForest": {
+      "accuracy": 99.77272727272727,
+      "correct": 439,
+      "total": 440,
+      "trainingTimeMs": 0,
+      "predictionTimeMs": 7.387199999999666,
+      "parameters": {
+        "nEstimators": 50,
+        "maxDepth": 10,
+        "maxFeatures": 3
+      }
+    }
+  },
+  "comparisonTable": [
+    {
+      "model": "Decision Tree",
+      "accuracy": "99.32%",
+      "trainingTime": "3648.62 ms",
+      "predictionTime": "0.70 ms",
+      "correctPredictions": "437/440"
+    },
+    {
+      "model": "K-Nearest Neighbors (k=5)",
+      "accuracy": "97.73%",
+      "trainingTime": "5.55 ms",
+      "predictionTime": "206.15 ms",
+      "correctPredictions": "430/440"
+    },
+    {
+      "model": "Random Forest (pre-trained)",
+      "accuracy": "99.77%",
+      "trainingTime": "0 ms (pre-trained)",
+      "predictionTime": "7.39 ms",
+      "correctPredictions": "439/440"
+    }
+  ]
+}
