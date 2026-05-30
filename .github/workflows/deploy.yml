@@ -5,9 +5,12 @@ on:
     branches:
       - master
 
+<<<<<<< HEAD
 permissions:
   contents: write
 
+=======
+>>>>>>> 9f5cc97eeefd678bc3e9c10e820b61277ea58807
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -18,7 +21,11 @@ jobs:
       - name: Install Node
         uses: actions/setup-node@v3
         with:
+<<<<<<< HEAD
           node-version: 20
+=======
+          node-version: 20  # 👈 changed from 18 to 20
+>>>>>>> 9f5cc97eeefd678bc3e9c10e820b61277ea58807
 
       - name: Install Dependencies
         run: npm install
